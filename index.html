@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <nav class="nav-bar">
+          <p class="selector" data-target="length">Длина</p>
+          <p class="selector" data-target="temp">Температура</p>
+          <p class="selector" data-target="area">Площадь</p>
+          <p class="selector" data-target="volume">Объем</p>
+          <p class="selector" data-target="weight">Вес</p>
+          <p class="selector" data-target="time">Время</p>
+        </nav>
+
+        <div class="option">
+          <div class="display-box" id="unit-display">
+            <h2 id="unit-header"></h2>
+            <div class="from">
+              <label for="from-units">Из:</label>
+              <div class="select-box">
+                <select id="from-units" name="from-units"></select>
+              </div>
+            </div>
+            <div class="to">
+              <label for="to-units">В:</label>
+              <div class="select-box">
+                <select id="to-units" name="to-units"></select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-output-textbar">
+          <input type="number" id="from-value" placeholder="Введите значение" />
+          <input type="number" id="to-value" placeholder="Результат" disabled />
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
